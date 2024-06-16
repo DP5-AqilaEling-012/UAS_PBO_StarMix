@@ -1,4 +1,3 @@
-
 package tokostarmix;
 
 import java.awt.Toolkit;
