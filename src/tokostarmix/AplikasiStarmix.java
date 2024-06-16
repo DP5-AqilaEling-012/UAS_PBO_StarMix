@@ -1266,10 +1266,10 @@ public class AplikasiStarmix extends javax.swing.JFrame {
                        JOptionPane.showMessageDialog(rootPane, "Minimum Harga adalah Rp 0", "Gagal", JOptionPane.ERROR_MESSAGE);
                    }
                 }else{
-                    JOptionPane.showMessageDialog(rootPane, "Stok hanya boleh berupa Angka!", "Gagal", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(rootPane, "Stok hanya boleh berupa angka!", "Gagal", JOptionPane.ERROR_MESSAGE);
                 }
             } else {
-                JOptionPane.showMessageDialog(rootPane, "Harga hanya boleh berupa Angka!", "Gagal", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(rootPane, "Harga hanya boleh berupa angka!", "Gagal", JOptionPane.ERROR_MESSAGE);
             }
         }else{
             JOptionPane.showMessageDialog(rootPane, "Data harus diisi dengan benar!", "Gagal", JOptionPane.ERROR_MESSAGE);
@@ -1293,12 +1293,12 @@ public class AplikasiStarmix extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(rootPane, "Data tidak ditemukan!", "Gagal", JOptionPane.ERROR_MESSAGE);
                 RefreshTampilanAdmin();
             }else{
-                int Pilih = JOptionPane.showConfirmDialog(rootPane,"Yakin akan menghapus data ini ?\nKode  :  "+txtKode_Hapus.getText()+"\nNama  :  "+resNama+"\n\n","Konfirmasi",JOptionPane.OK_CANCEL_OPTION);
+                int Pilih = JOptionPane.showConfirmDialog(rootPane,"Apakah Anda Apakah Anda yakin akan menghapus data ini ?   \nKode  :  "+txtKode_Hapus.getText()+"\nNama  :  "+resNama+"\n\n","Konfirmasi",JOptionPane.OK_CANCEL_OPTION);
                 if(Pilih == JOptionPane.OK_OPTION){
                     String delete = "DELETE FROM `tb_barang` WHERE id_user='"+Session.session.getSession()+"' AND kode='"+ txtKode_Hapus.getText() +"'";
                     PreparedStatement prs = conn.prepareStatement(delete);
                     prs.execute();
-                    JOptionPane.showMessageDialog(rootPane, "Barang berhasil diHapus!", "Berhasil", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(rootPane, "Barang berhasil di hapus!", "Berhasil", JOptionPane.INFORMATION_MESSAGE);
                     RefreshTampilanAdmin();
                 }else if(Pilih == JOptionPane.CANCEL_OPTION){
                     RefreshTampilanAdmin();
@@ -1361,10 +1361,10 @@ public class AplikasiStarmix extends javax.swing.JFrame {
                             JOptionPane.showMessageDialog(rootPane, "Minimum Harga adalah Rp 0", "Gagal", JOptionPane.ERROR_MESSAGE);
                         }
                     }else{
-                        JOptionPane.showMessageDialog(rootPane, "Stok hanya boleh berupa Angka!", "Gagal", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(rootPane, "Stok hanya boleh berupa angka!", "Gagal", JOptionPane.ERROR_MESSAGE);
                     }
                 } else {
-                    JOptionPane.showMessageDialog(rootPane, "Harga hanya boleh berupa Angka!", "Gagal", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(rootPane, "Harga hanya boleh berupa angka!", "Gagal", JOptionPane.ERROR_MESSAGE);
                 }
             }else{
                 JOptionPane.showMessageDialog(rootPane, "Data harus diisi dengan benar!", "Gagal", JOptionPane.ERROR_MESSAGE);
@@ -1447,7 +1447,7 @@ public class AplikasiStarmix extends javax.swing.JFrame {
                                     RefreshTampilanTransaksi();
                                     RefreshTampilanAdmin();
                                 }else{
-                                    JOptionPane.showMessageDialog(rootPane, "Jumlah min.1", "Gagal", JOptionPane.ERROR_MESSAGE);
+                                    JOptionPane.showMessageDialog(rootPane, "Jumlah minimal 1", "Gagal", JOptionPane.ERROR_MESSAGE);
                                 }
                             }
                         }else{
@@ -1455,7 +1455,7 @@ public class AplikasiStarmix extends javax.swing.JFrame {
                         }
                     }
                 }else{
-                    JOptionPane.showMessageDialog(rootPane, "Jumlah hanya boleh berupa Angka!", "Gagal", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(rootPane, "Jumlah hanya boleh berupa angka!", "Gagal", JOptionPane.ERROR_MESSAGE);
                 }
                 
             }else{
@@ -1502,7 +1502,7 @@ public class AplikasiStarmix extends javax.swing.JFrame {
                 String delete = "DELETE FROM `tb_keranjang` WHERE id_user='"+Session.session.getSession()+"'";
                 PreparedStatement prs = conn.prepareStatement(delete);
                 prs.execute();
-                JOptionPane.showMessageDialog(rootPane, "Keranjang berhasil diHapus!", "Berhasil", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(rootPane, "Keranjang berhasil di hapus!", "Berhasil", JOptionPane.INFORMATION_MESSAGE);
                 RefreshTampilanTransaksi();
                 RefreshTampilanAdmin();
                 
@@ -1560,7 +1560,7 @@ public class AplikasiStarmix extends javax.swing.JFrame {
                         pr.execute();
                     }
                     
-                    JOptionPane.showMessageDialog(rootPane, "Barang berhasil diHapus!", "Berhasil", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(rootPane, "Barang berhasil di hapus!", "Berhasil", JOptionPane.INFORMATION_MESSAGE);
                     RefreshTampilanTransaksi();
                     RefreshTampilanAdmin();
                 }else if(Pilih == JOptionPane.CANCEL_OPTION){
@@ -1680,14 +1680,14 @@ public class AplikasiStarmix extends javax.swing.JFrame {
                             showTabelKeranjang();
 
                         }else{
-                            JOptionPane.showMessageDialog(rootPane, "Uang Tidak cukup untuk membayar!", "Gagal", JOptionPane.ERROR_MESSAGE);
+                            JOptionPane.showMessageDialog(rootPane, "Uang Anda tidak cukup untuk membayar!", "Gagal", JOptionPane.ERROR_MESSAGE);
                         }
                     }
                 } catch (SQLException e) {
                     
                 }
             } else {
-                JOptionPane.showMessageDialog(rootPane, "Harga hanya boleh berupa Angka!", "Gagal", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(rootPane, "Harga hanya boleh berupa angka!", "Gagal", JOptionPane.ERROR_MESSAGE);
             }
         }else{
             JOptionPane.showMessageDialog(rootPane, "Data harus diisi dengan benar!", "Gagal", JOptionPane.ERROR_MESSAGE);
