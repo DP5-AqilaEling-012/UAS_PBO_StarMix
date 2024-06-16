@@ -1476,7 +1476,7 @@ public class AplikasiStarmix extends javax.swing.JFrame {
     private void btnHapus_SemuaKeranjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapus_SemuaKeranjangActionPerformed
         // TODO add your handling code here:
         try {
-            int Pilih = JOptionPane.showConfirmDialog(rootPane,"Yakin akan mengkosongkan isi keranjang?","Konfirmasi",JOptionPane.OK_CANCEL_OPTION);
+            int Pilih = JOptionPane.showConfirmDialog(rootPane,"Apakah Anda yakin akan mengkosongkan isi keranjang?","Konfirmasi",JOptionPane.OK_CANCEL_OPTION);
             if(Pilih == JOptionPane.OK_OPTION){
                 Connection conn = Koneksi.ConnectDB();
                 
@@ -1544,7 +1544,7 @@ public class AplikasiStarmix extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(rootPane, "Barang tidak ada dikeranjang!", "Gagal", JOptionPane.ERROR_MESSAGE);
                 RefreshTampilanTransaksi();
             }else{
-                int Pilih = JOptionPane.showConfirmDialog(rootPane,"Yakin akan menghapus data keranjang ini ?\nKode  :  "+txtKode_KeranjangHapus.getText()+"\nNama  :  "+resNama+"\nJumlah  :  "+resJumlah+"\n\n","Konfirmasi",JOptionPane.OK_CANCEL_OPTION);
+                int Pilih = JOptionPane.showConfirmDialog(rootPane,"Apakah Anda yakin akan menghapus data keranjang ini ?\nKode  :  "+txtKode_KeranjangHapus.getText()+"\nNama  :  "+resNama+"\nJumlah  :  "+resJumlah+"\n\n","Konfirmasi",JOptionPane.OK_CANCEL_OPTION);
                 if(Pilih == JOptionPane.OK_OPTION){
                     String delete = "DELETE FROM `tb_keranjang` WHERE id_user='"+Session.session.getSession()+"' AND kode_barang='"+ txtKode_KeranjangHapus.getText() +"'";
                     PreparedStatement prs = conn.prepareStatement(delete);
