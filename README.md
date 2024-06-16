@@ -5,3 +5,7 @@
 
 2. Bagian Login <br>
    ![Login SS](https://github.com/DP5-AqilaEling-012/UAS_PBO_StarMix/assets/114537894/e72adafa-c5c2-45b5-8b6f-886c894e9cb4)
+
+3. Bagian Profile <br>
+![bg-profile](https://github.com/DP5-AqilaEling-012/UAS_PBO_StarMix/assets/114506379/ad5bf4b0-461e-4287-8141-6f50df4a4168)
+
