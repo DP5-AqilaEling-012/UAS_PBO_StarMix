@@ -248,3 +248,221 @@ public class History extends javax.swing.JFrame {
         jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
         jScrollPane2.setBorder(null);
 
+        TabelHistory.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        TabelHistory.setModel(new javax.swing.table.DefaultTableModel(
+                new Object [][] {
+                        {null, null, null, null, null},
+                        {null, null, null, null, null},
+                        {null, null, null, null, null},
+                        {null, null, null, null, null},
+                        {null, null, null, null, null}
+                },
+                new String [] {
+                        "No.", "ID", "Nama", "Total", "Tanggal"
+                }
+        ) {
+            Class[] types = new Class [] {
+                    java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                    false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        TabelHistory.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        TabelHistory.setGridColor(new java.awt.Color(204, 204, 204));
+        TabelHistory.setRowHeight(25);
+        TabelHistory.setSelectionBackground(new java.awt.Color(204, 204, 204));
+        TabelHistory.setSelectionForeground(new java.awt.Color(1, 1, 1));
+        TabelHistory.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                TabelHistoryMousePressed(evt);
+            }
+        });
+        jScrollPane2.setViewportView(TabelHistory);
+
+        getContentPane().add(jScrollPane2);
+        jScrollPane2.setBounds(90, 270, 580, 130);
+
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel18.setText("Cari ID    :");
+        getContentPane().add(jLabel18);
+        jLabel18.setBounds(90, 420, 70, 20);
+
+        struk_TotalBayar.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        struk_TotalBayar.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        struk_TotalBayar.setText("Rp 0");
+        getContentPane().add(struk_TotalBayar);
+        struk_TotalBayar.setBounds(950, 490, 90, 20);
+
+        struk_JumlahUang.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        struk_JumlahUang.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        struk_JumlahUang.setText("Rp 0");
+        getContentPane().add(struk_JumlahUang);
+        struk_JumlahUang.setBounds(950, 510, 90, 30);
+
+        jLabel41.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        jLabel41.setText("Jumlah Uang        : ");
+        getContentPane().add(jLabel41);
+        jLabel41.setBounds(750, 510, 120, 30);
+
+        jLabel36.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        jLabel36.setText("Kembalian Uang   : ");
+        getContentPane().add(jLabel36);
+        jLabel36.setBounds(750, 540, 120, 20);
+
+        struk_KembalianUang.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        struk_KembalianUang.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        struk_KembalianUang.setText("Rp 0");
+        getContentPane().add(struk_KembalianUang);
+        struk_KembalianUang.setBounds(950, 540, 90, 20);
+
+        jLabel40.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        jLabel40.setText("Total Bayar          : ");
+        getContentPane().add(jLabel40);
+        jLabel40.setBounds(750, 490, 120, 20);
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Banyak           :");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(410, 510, 110, 20);
+
+        FilterTabel.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        FilterTabel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-Pilih-", "Total Terbesar", "Total Terkecil", "Terbaru", "Terlama" }));
+        FilterTabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        FilterTabel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FilterTabelActionPerformed(evt);
+            }
+        });
+        getContentPane().add(FilterTabel);
+        FilterTabel.setBounds(170, 470, 160, 30);
+
+        lbl_banyakTransaksi.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lbl_banyakTransaksi.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_banyakTransaksi.setText("0 Transaksi");
+        getContentPane().add(lbl_banyakTransaksi);
+        lbl_banyakTransaksi.setBounds(520, 510, 130, 20);
+
+        lbl_pendapatan.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lbl_pendapatan.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_pendapatan.setText("Rp 0");
+        getContentPane().add(lbl_pendapatan);
+        lbl_pendapatan.setBounds(520, 480, 130, 20);
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Pendapatan   :");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(410, 480, 110, 20);
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Cari Tanggal Transaksi :");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(90, 570, 170, 20);
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Filter       :");
+        getContentPane().add(jLabel11);
+        jLabel11.setBounds(90, 470, 70, 20);
+
+        btnRefreshAdmin.setBackground(new java.awt.Color(0, 0, 0));
+        btnRefreshAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/btn-refresh.png"))); // NOI18N
+        btnRefreshAdmin.setBorder(null);
+        btnRefreshAdmin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnRefreshAdmin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnRefreshAdminMouseClicked(evt);
+            }
+        });
+        btnRefreshAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRefreshAdminActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRefreshAdmin);
+        btnRefreshAdmin.setBounds(620, 230, 50, 30);
+
+        txtCari_idhistory.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        txtCari_idhistory.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtCari_idhistoryKeyPressed(evt);
+            }
+        });
+        getContentPane().add(txtCari_idhistory);
+        txtCari_idhistory.setBounds(170, 420, 160, 30);
+        getContentPane().add(inputTanggal);
+        inputTanggal.setBounds(90, 600, 160, 30);
+
+        ok.setBackground(new java.awt.Color(0, 0, 0));
+        ok.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/btn-cari_1.png"))); // NOI18N
+        ok.setBorder(null);
+        ok.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ok.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                okActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ok);
+        ok.setBounds(260, 600, 50, 30);
+
+        history.setBackground(new java.awt.Color(0, 0, 0));
+        history.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/bg-history.png"))); // NOI18N
+        getContentPane().add(history);
+        history.setBounds(0, 0, 1172, 715);
+
+        getAccessibleContext().setAccessibleName("APLIKASI TOKO STARMIX");
+
+        setSize(new java.awt.Dimension(1188, 748));
+        setLocationRelativeTo(null);
+    }// </editor-fold>//GEN-END:initComponents
+
+    public void refreshStruk(){
+        jumlah_listStruk.setText("");
+        nama_listStruk.setText("");
+        harga_listStruk.setText("");
+        lblTanggalValue.setText("0/0/0 ");
+        struk_TotalBayar.setText("Rp 0");
+        struk_JumlahUang.setText("Rp 0");
+        struk_KembalianUang.setText("Rp 0");
+    }
+
+    private void TabelHistoryMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TabelHistoryMousePressed
+        // TODO add your handling code here:
+        refreshStruk();
+        DefaultTableModel model = (DefaultTableModel)TabelHistory.getModel();
+        int selectedRowIndex = TabelHistory.getSelectedRow();
+        String id_history = model.getValueAt(selectedRowIndex, 1).toString();
+        String tanggal = model.getValueAt(selectedRowIndex, 4).toString();
+        lblTanggalValue.setText(tanggal);
+
+        // get id transaksi
+        try {
+            Connection conn = Koneksi.ConnectDB();
+            String query = "SELECT * FROM tb_history WHERE id_user='"+Session.session.getSession()+"' AND id='"+id_history+"'";
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(query);
+            String idTransaksi = "";
+            String totalBayar = "0";
+            String jumlahUang = "0";
+            String kembalianUang = "0";
+            while(rs.next()){
+                idTransaksi = rs.getString("id_transaksi");
+                totalBayar = rs.getString("total_tagihan");
+                jumlahUang = rs.getString("jumlah_uang");
+                kembalianUang = rs.getString("kembalian_uang");
+            }
+            struk_TotalBayar.setText("Rp "+RupiahFromat(Integer.parseInt(totalBayar)));
+            struk_JumlahUang.setText("Rp "+RupiahFromat(Integer.parseInt(jumlahUang)));
+            struk_KembalianUang.setText("Rp "+RupiahFromat(Integer.parseInt(kembalianUang)));
