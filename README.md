@@ -12,4 +12,6 @@
 4. Bagian Profile <br>
    ![profile](https://github.com/DP5-AqilaEling-012/UAS_PBO_StarMix/assets/114506379/6099ff2c-82dd-41d3-9c34-5d0a8efc51df)
 
+5. Bagian History
+   ![History](https://github.com/DP5-AqilaEling-012/UAS_PBO_StarMix/assets/114667475/e2dc5d6b-2bce-41e9-8029-a6d19dc1f87e)
 
