@@ -19,6 +19,32 @@ Kami menggunakan Bahasa Pemrograman Java. <br>
 3. Buat database dengan nama toko_starmix.sql
 4. Jalankan programnya di aplikasi netbeans
 
+**1. Framework**<br>
+Pada codingan program kami menggunakan swing framework untuk membuat GUI.<br>
+
+**2. Konsep OOP**<br>
+Pada codingan program ini menggunakan beberapa konsep OOP yakni:<br>
+a. Enkapsulasi<br>
+Contohnya pada: Kelas 'AplikasiStarmix' terdapat 'showTabelBarang()', 'showTabelKeranjang()', 'hitungKeranjang()' untuk mengenkapsulasi pengambilan data dari database ke GUI.<br>
+b. Inheritance<br>
+Contohnya pada: Kelas AplikasiStarmix mewarisi dari javax.swing.JFrame, subkelasnya adalah dari 'JFrame'.<br>
+c. Polymorpishm<br>
+Contohnya pada: Menggunakan overriding method event handler yang berbeda seperti pada 'btnSimpan_TambahActionPerformed()' dan 'btnCariBarangActionPerformed()'.<br>
+d. Abstraction<br>
+Contohnya pada: Abstraksi pada kode program ini menyederhanakan interaksi pengguna dengan system yang menggunakan berbagai methode.<br>
+
+**3. Menggunakan JDBC**<br> 
+JDBC digunakan untuk koneksi ke database.<br>
+
+**4. Menggunakan Session**<br>
+Session digunakan untuk mengelola informasi dari pengguna yang sedang aktif.<br>
+
+**5. Menggunakan Logging**<br>
+Logging digunakan untuk menangani exception.<br>
+
+**6. Menggunakan komponen GUI dari swing** <br>
+GUI digunakan untuk membangun desain antarmuka pengguna.<br>
+
 **Output Program**
 1. Bagian Menu Utama StarMix
    ![Menu StarMix](https://github.com/DP5-AqilaEling-012/UAS_PBO_StarMix/assets/114504718/f2369800-aa46-45a5-a81b-811bf397c1b2)
