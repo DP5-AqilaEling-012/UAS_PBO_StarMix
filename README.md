@@ -11,7 +11,13 @@ Nama Anggota:
 5. Jonathan Ignasius Sitanggang (221401035) <br>
    Jobdesk: Mengerjakan Halaman Login
 
-   Kami menggunakan Bahasa Pemrograman Java.
+Kami menggunakan Bahasa Pemrograman Java dengan menggunakan framework javaswing. <br>
+**Tools:** Netbeans, Mysql Xampp, Github <br>
+**Cara Install:**
+1. Download Zip Github berikut
+2. Ekstrak Zip Github
+3. Buat database dengan nama toko_starmix.sql
+4. Jalankan programnya di aplikasi netbeans
 
 **Output Program**
 1. Bagian Menu Utama StarMix
