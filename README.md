@@ -11,7 +11,7 @@ Nama Anggota:
 5. Jonathan Ignasius Sitanggang (221401035) <br>
    Jobdesk: Mengerjakan Halaman Login
 
-Kami menggunakan Bahasa Pemrograman Java dengan menggunakan framework javaswing. <br>
+Kami menggunakan Bahasa Pemrograman Java. <br>
 **Tools:** Netbeans, Mysql (PHPMyAdmin), Xampp, Github <br>
 **Cara Install:**
 1. Download Zip Github berikut
