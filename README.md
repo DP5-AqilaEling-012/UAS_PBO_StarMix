@@ -12,7 +12,7 @@ Nama Anggota:
    Jobdesk: Mengerjakan Halaman Login
 
 Kami menggunakan Bahasa Pemrograman Java dengan menggunakan framework javaswing. <br>
-**Tools:** Netbeans, Mysql Xampp, Github <br>
+**Tools:** Netbeans, Mysql (PHPMyAdmin), Xampp, Github <br>
 **Cara Install:**
 1. Download Zip Github berikut
 2. Ekstrak Zip Github
