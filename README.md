@@ -1,5 +1,19 @@
-# UAS_PBO_StarMix
+**Kelompok Starmix** <br>
+Nama Anggota:
+1. Nur Annisa Balqis (221401003) <br>
+   Jobdesk: Mengerjakan Halaman Utama
+2. Winda Rinjani Adhana (221401009) <br>
+   Jobdesk: Mengerjakan Halaman History (Riwayat Pembelian)
+3. Aqila Eling Febrianti (221401012) <br>
+   Jobdesk: Mengerjakan Halaman Register
+4. Devia Anjani (221401019) <br>
+   Jobdesk: Mengerjakan Halaman Profile
+5. Jonathan Ignasius Sitanggang (221401035) <br>
+   Jobdesk: Mengerjakan Halaman Login
 
+   Kami menggunakan Bahasa Pemrograman Java.
+
+**Output Program**
 1. Bagian Menu Utama StarMix
    ![Menu StarMix](https://github.com/DP5-AqilaEling-012/UAS_PBO_StarMix/assets/114504718/f2369800-aa46-45a5-a81b-811bf397c1b2)
 
