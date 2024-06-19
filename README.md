@@ -11,6 +11,8 @@ Nama Anggota:
 5. Jonathan Ignasius Sitanggang (221401035) <br>
    Jobdesk: Mengerjakan Halaman Login
 
+**Link Youtube** : https://youtu.be/jW0Gyx8xCE8?si=1tCR-RrIIHez7sLs
+
 Kami menggunakan Bahasa Pemrograman Java. <br>
 **Tools:** Netbeans, Mysql (PHPMyAdmin), Xampp, Github <br>
 **Cara Install:**
